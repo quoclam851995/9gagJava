@@ -1,14 +1,12 @@
-package com.morsoftware.dto;
-
-import java.awt.*;
+package com.morsoftware.dto; // gom cac thuoc tinh giong nhu entity va cac thuoc tinh phat sinh khi xu ly tren giao dien
 
 public class PostDTO extends AbstractDTO<PostDTO> {
 
     private String title;
     private String content;
-    private String shortDescription;
+    private String description;
     private String categoryCode;
-    private Image thumbnail;
+    private String thumbnail;
 
     public String getTitle() {
         return title;
@@ -26,12 +24,12 @@ public class PostDTO extends AbstractDTO<PostDTO> {
         this.content = content;
     }
 
-    public String getShortDescription() {
-        return shortDescription;
+    public String getDescription() {
+        return description;
     }
 
-    public void setShortDescription(String shortDescription) {
-        this.shortDescription = shortDescription;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getCategoryCode() {
@@ -42,11 +40,11 @@ public class PostDTO extends AbstractDTO<PostDTO> {
         this.categoryCode = categoryCode;
     }
 
-    public Image getThumbnail() {
+    public String getThumbnail() {
         return thumbnail;
     }
 
-    public void setThumbnail(Image thumbnail) {
+    public void setThumbnail(String thumbnail) {
         this.thumbnail = thumbnail;
     }
 }

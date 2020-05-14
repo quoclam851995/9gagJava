@@ -1,5 +1,7 @@
 package com.morsoftware.service;
 
-public interface IPostService {
+import com.morsoftware.dto.PostDTO;
 
+public interface IPostService {
+    PostDTO save(PostDTO postDTO);
 }
